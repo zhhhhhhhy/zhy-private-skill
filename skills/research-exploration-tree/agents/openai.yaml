@@ -1,0 +1,6 @@
+interface:
+  display_name: "科研探索树 Skill"
+  short_description: "把模糊科研问题拆成可验证假设、最小实验与可积累洞见"
+  default_prompt: "Use $research-exploration-tree to turn my research question into an iterative, testable research tree."
+policy:
+  allow_implicit_invocation: true

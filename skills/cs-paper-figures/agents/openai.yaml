@@ -1,0 +1,6 @@
+interface:
+  display_name: "CS Paper Figures"
+  short_description: "Computer-science paper figures with provenance checks"
+  default_prompt: "Use $cs-paper-figures to create and audit a publication-ready computer-science paper figure."
+policy:
+  allow_implicit_invocation: true

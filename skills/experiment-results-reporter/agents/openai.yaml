@@ -1,0 +1,4 @@
+interface:
+  display_name: "实验结果汇报"
+  short_description: "仅客观汇总已有实验结果，不披露文件位置或作效果判断"
+  default_prompt: "使用 $experiment-results-reporter 用中文客观汇报这组实验结果。"

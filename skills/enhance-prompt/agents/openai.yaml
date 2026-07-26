@@ -1,0 +1,4 @@
+interface:
+  display_name: "Enhance Prompt"
+  short_description: "使用隔离子智能体补齐 Prompt 边界、约束与输出契约"
+  default_prompt: "使用 $enhance-prompt 为下面的 Prompt 自动补齐边界、约束与输出契约。"

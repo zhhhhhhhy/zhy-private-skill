@@ -1,0 +1,12 @@
+% Conceptual template. Replace labels from the verified paper formulation.
+\begin{tikzpicture}[font=\scriptsize, node distance=5mm and 7mm,
+  box/.style={draw, rounded corners=1pt, align=center, inner sep=4pt}]
+  \node[box] (evidence) {Evidence\\context};
+  \node[box, right=of evidence] (candidates) {Candidate\\set};
+  \node[box, right=of candidates] (decision) {Evidence-conditioned\\decision};
+  \node[box, right=of decision] (action) {Answer\\or abstain};
+  \draw[->] (evidence) -- (candidates);
+  \draw[->] (candidates) -- (decision);
+  \draw[->] (decision) -- (action);
+\end{tikzpicture}
+
