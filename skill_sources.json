@@ -1,37 +1,17 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-07-26",
+  "snapshot_date": "2026-10-05",
   "hash_algorithm": "sha256(relative_path + NUL + sha256(file_bytes), sorted by relative_path)",
   "skills": [
     {
-      "name": "academic-paper",
-      "target_path": "skills/academic-paper",
-      "source_path": "$CODEX_HOME/skills/academic-paper",
+      "name": "academic-write",
+      "target_path": "skills/academic-write",
+      "source_path": "$CODEX_HOME/skills/academic-write",
       "source_kind": "global_user_skill",
-      "file_count": 60,
-      "source_tree_sha256": "05747570606888b1fb3b96669214b3bb39a6365643f397193235e2d7cbce4710",
+      "file_count": 3,
+      "source_tree_sha256": "548af7483624682c7ace1d5bdb55a4e273ac18626bbf2b99e0221ab318c42a59",
       "label_source": "not_applicable",
       "caveat": "Snapshot of the locally installed skill; upstream licensing and update authority are not inferred."
-    },
-    {
-      "name": "academic-paper-reviewer",
-      "target_path": "skills/academic-paper-reviewer",
-      "source_path": "$CODEX_HOME/skills/academic-paper-reviewer",
-      "source_kind": "global_user_skill",
-      "file_count": 26,
-      "source_tree_sha256": "5ba73772b71ebb765c851ae4ea24004edb1fbd2d121ebddf679d7636c763bc6b",
-      "label_source": "not_applicable",
-      "caveat": "Snapshot of the locally installed skill; upstream licensing and update authority are not inferred."
-    },
-    {
-      "name": "academic-pipeline",
-      "target_path": "skills/academic-pipeline",
-      "source_path": "$CODEX_HOME/skills/academic-pipeline",
-      "source_kind": "global_user_skill",
-      "file_count": 30,
-      "source_tree_sha256": "b85225e45fe5f1a3e1ef19a058c5d00f110b576b6f576f592115f74c2ecd4080",
-      "label_source": "not_applicable",
-      "caveat": "Depends on deep-research, academic-paper, and academic-paper-reviewer."
     },
     {
       "name": "deep-research",
@@ -42,16 +22,6 @@
       "source_tree_sha256": "9c8933e87aac25f15eb90701f022071ef94dba5d91f89cc3ec50b804317ef3ce",
       "label_source": "not_applicable",
       "caveat": "Snapshot of the locally installed skill; upstream licensing and update authority are not inferred."
-    },
-    {
-      "name": "enhance-prompt",
-      "target_path": "skills/enhance-prompt",
-      "source_path": "$CODEX_HOME/skills/enhance-prompt",
-      "source_kind": "global_user_skill",
-      "file_count": 2,
-      "source_tree_sha256": "e658082b932f93e02bac193da2d7bb712f699b30353bf45ebbb3699b1f8b9a39",
-      "label_source": "not_applicable",
-      "caveat": "Requires a runtime that supports subagent delegation; otherwise it reports a blocker."
     },
     {
       "name": "grill-me",
@@ -72,36 +42,6 @@
       "source_tree_sha256": "5993329a98f5dc50a6a7cd47e069a3fcf229bbd501afa83dbc61f3dc57a25539",
       "label_source": "not_applicable",
       "caveat": "Interactive workflow; it intentionally requires multiple user turns."
-    },
-    {
-      "name": "experiment-results-reporter",
-      "target_path": "skills/experiment-results-reporter",
-      "source_path": "$WORKSPACE/.agents/skills/experiment-results-reporter",
-      "source_kind": "workspace_user_skill",
-      "file_count": 2,
-      "source_tree_sha256": "d17d184cdafd575ecfcf4d99900d996656461ac46507e6174aa94142fb5979b8",
-      "label_source": "not_applicable",
-      "caveat": "Report-only workflow; it must not be treated as an experiment evaluator."
-    },
-    {
-      "name": "research-exploration-tree",
-      "target_path": "skills/research-exploration-tree",
-      "source_path": "$WORKSPACE/科研workflow/research-exploration-tree",
-      "source_kind": "workspace_user_skill",
-      "file_count": 7,
-      "source_tree_sha256": "fccc18280b1d43efd83c969d191f13f1f49edeb95fbe8d685ef718afdd5407c4",
-      "label_source": "not_applicable",
-      "caveat": "Workflow snapshot; conclusions created with it remain evidence-scoped and project-specific."
-    },
-    {
-      "name": "cs-paper-figures",
-      "target_path": "skills/cs-paper-figures",
-      "source_path": "$WORKSPACE/ReportFill_v2.0/.agents/skills/cs-paper-figures",
-      "source_kind": "project_specific_snapshot",
-      "file_count": 14,
-      "source_tree_sha256": "1577bab252683be22fc8039696e558056076a0fb9c66134236c94f059572b37a",
-      "label_source": "not_applicable",
-      "caveat": "Detached copy from ReportFill_v2.0. It has no runtime link to that project; review project-specific assumptions before reuse."
     }
   ],
   "excluded_managed_sources": [
